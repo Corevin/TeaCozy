@@ -1,0 +1,153 @@
+/*=========================================
+* 7/27/2017
+* This is the CSS page for the codecamy Tea Cozy
+* project that works through the entirity of the
+* information learned as a part of the flexbox
+* lesson.
+=============================================*/
+
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: .9;
+  text-align: center;
+  margin: 0;
+}
+
+.page-container {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-bottom: 60px;
+}
+
+.page-container img {
+  width: 300px;
+  height: 200px;
+  padding: 25px
+  margin: 10px 25px 10px 25px;
+}
+
+/* Header section of the page */
+.header {
+  display: flex;
+  position:fixed;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  z-index: 20;
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 10px;
+  height: 50px;
+}
+
+.links {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.links a {
+  padding: 15px;
+  color: seashell;
+  text-decoration: underline;
+}
+
+
+/* Mission section */
+#mission-back {
+  display: flex;
+  background-image: url("../Resources/Images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+}
+
+#mission-text{
+  background-color: black;
+  width: 1200px;
+  margin: 0;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+/*tea of the month section */
+.tea-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.pic {
+  margin-bottom: 10px;
+  justify-content: space-around;
+  }
+
+.pic img {
+  margin-left: 33px;
+  height: 200px;
+  width: 300px;
+}
+
+.tea-pics span {
+  text-align: center;
+  display: block;
+  align-items: flex-end;
+}
+
+/* location section of the page */
+#location-container{
+  display:flex;
+  background-image: url("../Resources/Images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.location-box {
+  display: flex;
+  padding: 20px;
+  opacity: 1;
+  flex-wrap: wrap;
+}
+
+.location-item {
+  background-color: black;
+  width: 300px;
+}
+
+/*Contact us section */
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+}
+
+/*Copyright section */
+.copy-box{
+  display: flex;
+  text-align: left;
+  padding: 20px;
+}
